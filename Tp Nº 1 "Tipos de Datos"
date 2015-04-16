@@ -16,7 +16,7 @@ int main() {
      break;
    cout << "Te equivocaste amigo\n" << endl;
  }
- cout << "Ha ingresado: " << a;
+ cout << "Ha ingresado: \n" << a;
 
  char yoquese  = {0};
 
