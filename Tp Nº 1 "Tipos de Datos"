@@ -1,0 +1,36 @@
+/*Gonzalo Martin Lucena K1051
+/*15/04/2015
+/*Tp Nº 1 "Tipos de Datos" Algoritmos y Estructura de Datos, Le pide al usuario que ingrese un numero positivo, lo 
+/*convierte a string y luego le pude que una letra/un solo caracter para luego mostrarselos
+
+#include <iostream>
+
+int main() { 
+ int a = 0;
+ string input = "";
+ while (true) {
+   cout << "Ingrese un numero entero y positivo: \n";
+   getline(cin, input);
+   stringstream myStream(input);
+   if (myStream >> a)
+     break;
+   cout << "Te equivocaste amigo\n" << endl;
+ }
+ cout << "Ha ingresado: " << a;
+
+ // How to get a single char.
+ char yoquese  = {0};
+
+ while (true) {
+   cout << "por favor ingrese un solo dato: \n";
+   getline(cin, input);
+
+   if (input.length() == 1) {
+     yoquese = input[0];
+     break;
+   }
+      cout << "No estas entendiendo amigo\n" << endl;
+ }
+ cout << "Has ingresado: " << yoquese << a << endl << endl;
+}
+
