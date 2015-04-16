@@ -4,6 +4,10 @@
 /*convierte a string y luego le pude que una letra/un solo caracter para luego mostrarselos
 
 #include <iostream>
+#include <string>
+#include <sstream>
+
+using namespace std;
 
 int main() { 
  int a = 0;
@@ -16,7 +20,6 @@ int main() {
      break;
    cout << "Te equivocaste amigo\n" << endl;
  }
- cout << "Ha ingresado: \n" << a;
 
  char yoquese  = {0};
 
@@ -32,4 +35,3 @@ int main() {
  }
  cout << "Has ingresado: " << yoquese << a << endl << endl;
 }
-
