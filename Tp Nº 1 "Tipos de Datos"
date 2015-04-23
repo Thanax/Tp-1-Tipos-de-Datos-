@@ -1,37 +1,56 @@
 /*Gonzalo Martin Lucena K1051
-/*15/04/2015
-/*Tp Nº 1 "Tipos de Datos" Algoritmos y Estructura de Datos, Le pide al usuario que ingrese un numero positivo, lo 
-/*convierte a string y luego le pude que una letra/un solo caracter para luego mostrarselos
+/*22/04/2015
+/*Tp Nº 1 "Tipos de Datos" Algoritmos y Estructura de Datos, Le pide al usuario que ingrese un numero, unas letras y
+/*que describa en una palabra como se siente
 
 #include <iostream>
 #include <string>
-#include <sstream>
 
 using namespace std;
 
 int main() { 
- int a = 0;
- string input = "";
- while (true) {
-   cout << "Ingrese un numero entero y positivo: \n";
-   getline(cin, input);
-   stringstream myStream(input);
-   if (myStream >> a)
-     break;
-   cout << "Te equivocaste amigo\n" << endl;
- }
-
- char yoquese  = {0};
-
- while (true) {
-   cout << "por favor ingrese un solo dato: \n";
-   getline(cin, input);
-
-   if (input.length() == 1) {
-     yoquese = input[0];
-     break;
+ int a = 1;
+ int b;
+ char yolo;
+ char yol1;
+ char yol2;
+ char yol3;
+ std::cout << "Si la ultima linea tiene sentido semantico esto va a ser muy loco\n";
+ std::cout << "Ingrese un numero: \n";
+ std::cin >> b;
+ if (b == a) {
+   std::cout << "El numero es 1\n";
+   std::cout << "Ahora ingrese una letra o caracter\n";
+    }
+   else {
+       if (b < a) {
+             std::cout << "Ese numero es menor a 1\n";
+             std::cout << "Ahora ingrese una letra o caracter\n";
+              }
+             else {
+                         if (b > a) {
+                            std::cout << "Ese numero es mayor a 1\n";
+                            std::cout << "Ahora ingrese una letra o caracter\n";
+                            }
+                         else {
+                              std::cout << "Eso no es un nùmero\n";
+                              std::cout << "Si tanto queres ingresar otra cosa proba con una letra una letra\n";
+                            }
+             }
+       }
+   bool real = b == a;
+   std::cin >> yolo;
+   std::cout << "Ha ingresado:" << yolo << "ingrese otras tres\n" ;
+   std::cin >> yol1;
+   std::cin >> yol2;
+   std::cin >> yol3;
+   std::cout << "Ha deletreado: " << yolo << yol1 << yol2 << yol3 << endl;
+   std::cout << "Espero que se sienta feliz con sus tipeos hasta ahora, es mas, describa en una palabra como se siente\n";
+   std::string feels;
+   std::cin >> feels;
+   std::cout << "¿Ah si?¿ Se siente " << feels << "?..." << " pues yo no me siento asi, yo me siento  ";
+   std::cout << yolo << yol1 << yol2 << yol3 << b << real << "  y medio aburrido" << endl;
+   return 0;
+   
    }
-      cout << "No estas entendiendo amigo\n" << endl;
- }
- cout << "Has ingresado: " << yoquese << a << endl << endl;
-}
+ 
